@@ -1,7 +1,6 @@
 import memoize from 'memoize-one'
 import * as R from 'ramda'
-import { createNotation, createScoreSheet } from '~/chess/core'
-import { createTimeline } from '~/chess/helpers'
+import { createNotation, createScoreSheet, createTimeline } from 'cavallo'
 
 function createSheet (snapshot, past) {
   return R.compose(

@@ -1,13 +1,20 @@
 import { connect } from 'react-redux'
+import {
+  mesurePosition,
+  getMovableTilesGroup,
+  createTimeline,
+  getSpecial,
+  parseCode,
+  getPrevSnapshots,
+  RANKS,
+  FILES
+} from 'cavallo'
 import { Diagram } from '~/components'
 import {
   setNextSnapshot,
   setNextMovableAxis,
   setNextCapturedSnapshot
 } from '~/actions/ingame'
-import { mesurePosition, getMovableTilesGroup } from '~/chess/core'
-import { createTimeline, getSpecial, parseCode, getPrevSnapshots } from '~/chess/helpers'
-import { RANKS, FILES } from '~/chess/constants'
 import { isExist, isEmpty, merge } from '~/utils'
 import getMovable from './getMovable'
 

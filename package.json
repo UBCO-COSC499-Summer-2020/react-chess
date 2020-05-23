@@ -75,6 +75,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.3",
     "@hot-loader/react-dom": "^16.8.6",
+    "cavallo": "^0.1.0",
     "classnames": "^2.2.6",
     "memoize-one": "^5.0.5",
     "prop-types": "^15.7.2",

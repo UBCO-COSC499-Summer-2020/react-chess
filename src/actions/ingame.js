@@ -1,12 +1,9 @@
 import * as R from 'ramda'
-import * as types from '~/actions'
 import {
   getNextMovable,
   getNextSnapshot,
   findCheckCode,
-  applySpecialActions
-} from '~/chess/core'
-import {
+  applySpecialActions,
   getSpecial,
   getOpponentTurn,
   getPrevSnapshots,
@@ -15,7 +12,8 @@ import {
   parseCode,
   replaceSnapshot,
   diffSnapshot
-} from '~/chess/helpers'
+} from 'cavallo'
+import * as types from '~/actions'
 import { isEmpty, lazy, merge } from '~/utils'
 
 export function setTs (ts = +new Date()) {

@@ -1,6 +1,6 @@
 import memoize from 'memoize-one'
 import * as R from 'ramda'
-import { getNextMovable } from '~/chess/core'
+import { getNextMovable } from 'cavallo'
 import { lazy } from '~/utils'
 
 // no extra rendering when clicking same Chess piece

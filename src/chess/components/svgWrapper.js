@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { useSpring, animated } from 'react-spring'
 import cx from 'classnames'
 import * as R from 'ramda'
+import { getTurn, parseCode } from 'cavallo'
 import { noop } from '~/utils'
-import { getTurn, parseCode } from '~/chess/helpers'
 
 const POSITION_DEFAULT = {
   top: 0,
